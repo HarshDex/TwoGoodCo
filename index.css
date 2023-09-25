@@ -3,85 +3,145 @@
     margin : 0;
     box-sizing : border-box;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
-  }
-  html,body{
+    overflow-x: hidden; background-color: #F7F7F7;
+}
+html,body{
     height : 100%;
     width : 100%;
-  }
-  .main-container{
-      background-color: #F7F7F7;
-  }
-  
-  .main-container::-webkit-scrollbar{
-      display: none;
-  }
-  
-  /* ?code for page 1 */
-  .page1{
-      min-height: 100vh;
-      width: 100vw;
-      text-transform: uppercase;
-      line-height: 30vh;
-  }
-  .page1 h1:nth-child(1){
-      padding-top: 12%;
-      font-size: 15vw;
-      font-weight: 900;
-      letter-spacing: -1vw;
-      overflow-y: hidden;
-  }
-  .page1 h1:nth-child(2){
-      font-size: 15vw;
-      font-weight: 900;
-      overflow-y: hidden;
-      letter-spacing: -1.3vw;
-  
-  }
-  .page1-video-section{
-      margin-top: 5%;
-      height: 100vh;
-      width: 94%;
-      margin-left: 3%;
-      overflow: hidden;
-  }
-  .page1-video-section video{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-  }
-  
-  /* ? code for page 2 */
-  .page2{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      width: 100vw;
-  }
-  .page2-good-section{
-      display: flex;
-      height: 5vh;
-      width: 95%;
-      font-size: .8em;
-      font-weight: 100;
-      margin-top:2%;
-      align-items : flex-end;
-      justify-content: space-between;
-      border-bottom : 1.5px solid black;
-  }
-  .page2-image-container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      height: 100vh;
-      width : 95%;
-      margin-top: 2vh;
-      gap: 1%;
-  }
-  .page2-image-container-image{
-      height: 95%;
-      width: 24em;
-      background-color: blue;
-  }
+}
+/* ? code for cursor */
+.cursor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    border-radius: 100%;
+    transition: all ease-out .4s;
+    background-color : black;
+    font-weight: 900;
+}
+/* ?code for page 1 */
+.page1{
+    width: 100vw;
+    min-height: 100vh;
+    line-height: 30vh;
+    text-transform: uppercase;
+}
+.page1-navigation-bar{
+    width: 100%;
+    padding: 3vh;
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+}
+.page1-navigation-bar .logo{
+    width: 10%;
+    height: 18vh;
+    display: flex;
+    overflow: hidden;
+    font-size: 2.2em;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 5.3vh;
+    flex-direction: column;
+}
+.logo p{
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.page1-navigation-bar .menu-items{
+    width: 40%;
+    height: 20%;
+    display: flex;
+    margin-top: 1%;
+    overflow: hidden;
+    position: relative;
+    justify-content: space-between;
+}
+.menu-items a{
+    color: black;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+.menu-item-icons{
+    width: 20%;
+    height: 10vh;
+    display: flex;
+    overflow : hidden;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.menu-item-icons i{
+    overflow: hidden;
+    font-size: 1.3em;
+}
+
+
+.page1 #h11{
+    margin-top: 2%;
+    font-size: 15vw;
+    font-weight: 900;
+    overflow-y: hidden;
+    letter-spacing: -1vw;
+}
+.page1 #h12{
+    font-size: 15vw;
+    font-weight: 900;
+    overflow-y: hidden;
+    letter-spacing: -1.3vw;
+
+}
+.page1-video-section{
+    width: 94%;
+    height: 100vh;
+    margin-top: 4%;
+    margin-left: 3%;
+    overflow: hidden;
+}
+.page1-video-section video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ? code for page 2 */
+.page2{
+    width: 100vw;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+.page2-good-section{
+    width: 95%;
+    height: 5vh;
+    margin-top:2%;
+    display: flex;
+    font-size: .8em;
+    font-weight: 100;
+    align-items : flex-end;
+    justify-content: space-between;
+    border-bottom : 1.5px solid black;
+}
+.page2-image-container{
+    gap: 1%;
+    width : 95%;
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+    align-items: center;
+    justify-content: center;
+}
+.page2-image-container-image{
+    height: 95%;
+    width: 24em;
+    overflow: hidden;
+}
+.page2-image-container-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

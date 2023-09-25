@@ -5,27 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="main-container">
+        <div class="cursor"></div>
+        <!-- ? navigation bar -->
+        <div class="page1-navigation-bar">
+            <div class="logo">
+                <p>Two</p>
+                <p>Good</p>
+                <p>Co.</p>
+            </div>
+            <!-- ?menu icons -->
+            <div class="menu-items">
+                <a href="#">Shop</a>
+                <a href="#">Catering ↗</a>
+                <a href="#">Donate</a>
+                <div class="menu-item-icons">
+                    <i class="ri-menu-fill"></i>
+                    <i class="ri-shopping-cart-line"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ? page1 -->
         <div class="page1">
-            <h1>Change</h1>
-            <h1>The Course</h1>
+            <h1 id = "h11">Change</h1>
+            <h1 id = "h12">The Course</h1>
             <div class="page1-video-section">
                 <video controls="" loop="" playsinline="" autoplay=""  muted src="./assets/page1-video-container.mp4"></video>
             </div>
         </div>
+        <!-- ? page2 -->
         <div class="page2">
             <div class="page2-good-section">
                 <p>BUY GOOD</p>
                 <p>DO GOOD</p>
             </div>
             <div class="page2-image-container">
-                <div class="page2-image-container-image"></div>
-                <div class="page2-image-container-image"></div>
-                <div class="page2-image-container-image"></div>
+                <div class="page2-image-container-image">
+                    <img src="https://images.pexels.com/photos/2295744/pexels-photo-2295744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                </div>
+                <div class="page2-image-container-image">
+                    <img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                </div>
+                <div class="page2-image-container-image">
+                    <img src="https://images.pexels.com/photos/1319515/pexels-photo-1319515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                </div>
             </div>
         </div>
+        <!-- ? page3 -->
+        <div class="page3">
+
+        </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
